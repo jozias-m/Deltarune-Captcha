@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Grid CAPTCHA</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="captcha-box">
+        <div class="header">
+            <p>Select all squares with</p>
+            <h1 id="captcha-label">a human</h1>
+            <span class="hint">If there are none, click skip</span>
+        </div>
+        <div id="grid" class="grid"></div>
+        <div class="controls">
+            <button id="refreshBtn" class="icon-btn">↻</button>
+            <button id="skipBtn" class="icon-btn">⏭</button>
+            <button id="infoBtn" class="icon-btn">ⓘ</button>
+            <button id="nextBtn" class="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

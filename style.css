@@ -1,0 +1,107 @@
+body {
+    background: #f4f6fb;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-family: "Inter", sans-serif;
+}
+
+.captcha-box {
+    width: 460px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.09);
+}
+#captcha-label {
+    font-family: "Silkscreen", sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.header {
+    background: #4d7bf5;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin: 5px 0 0;
+}
+
+.hint {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.tile {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: 400%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.tile:hover {
+    filter: brightness(1.15);
+}
+
+.selected::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 26px;
+    height: 26px;
+    background: #4d7bf5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px white;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.icon-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    font-size: 20px;
+    border: none;
+    background: #e8edff;
+    color: #4264d0;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    background: #d7e1ff;
+}
+
+.next-btn {
+    margin-left: auto;
+    padding: 12px 26px;
+    background: #4d7bf5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background: #3c67dd;
+}
